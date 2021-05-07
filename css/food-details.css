@@ -1,0 +1,209 @@
+:root{
+    --main-color: #D70F64;
+    --text-color: #333;
+    --border-color: #FA7751
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+}
+
+hr{
+    width: 100%;
+    height: .5px;
+    background: #ccc;
+    border: none
+}
+.container{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 37px;
+}
+/* Header section */
+#header{
+    padding: 10px 25px;
+    background: -moz-radial-gradient(center, rgba(199, 212, 218, 1.0), rgba(229, 237, 239, 1.0));
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0, 0.1);
+}
+#header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .d-none{
+    display: none;
+}
+#header .logo{
+    display: flex;
+    align-items: center;
+}
+#header .logo img{
+    width: 30px;
+}
+#header .logo-text a{
+    font-size: 120%;
+    color:var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 7px;
+}
+#header .right-side{
+    display: flex;
+}
+#header .language{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+}
+#header .language::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: rgb(189, 189, 189);
+    left: -20px;
+    top: 0;
+    margin-right: 15px;
+}
+#header .language a{
+    font-size: 60%;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#header .language .en-language a{
+    margin-right: 10px;
+    position: relative;
+}
+#header .language .en-language a::after{
+    content: " ";
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background: #333;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 5px;
+}
+#header .user{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+    margin-left: 15px;
+}
+#header .user::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: rgb(189, 189, 189);
+    left: -20px;
+    top: 0;
+    margin-right: 15px;
+}
+#header .user .user-icon{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+}
+#header .user .user-icon a{
+    color:var(--main-color);
+    font-size: 60%;
+    color: #fff;  
+}
+#header .user .user-login a{
+    color: var(--text-color);
+    font-size: 60%;
+    font-weight: 700;
+}
+#header .cart a{
+    font-size: 105%;
+    color: var(--main-color);
+
+}
+#header .cart{
+    position: relative;
+    margin-left: 20px;
+}
+#header .cart::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: rgb(189, 189, 189);
+    left: -20px;
+    top: 0;
+    margin-right: 15px;
+}
+
+/* Details Section */
+#details .details-img{
+    width: 70%;
+    height: 250px;
+    position: relative;
+}
+#details .details-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#details .details-img .img-cap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.377);
+}
+#details .details-img .img-cap h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+#details .main-info{
+    padding: 20px 0;
+}
+#details .main-info h2{
+    font-size: 120%;
+}
+#details .main-info .update{
+    display: flex;
+}
+#details .main-info .update li{
+    font-size: 75%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#details .main-info .update li+li{
+    margin-left: 20px;
+}
+#details .main-info .details-category{
+    display: flex;
+}
+#details .main-info .details-category li{
+    font-size: 60%;
+}
+#details .main-info .details-category li span{
+
+}

@@ -1,0 +1,214 @@
+:root{
+    --main-color: #D70F64;
+    --text-color: #333;
+    --border-color: #FA7751
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+}
+#header{
+    padding: 10px 25px;
+    background: -moz-radial-gradient(center, rgba(199, 212, 218, 1.0), rgba(229, 237, 239, 1.0));
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0, 0.1);
+}
+#header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .d-none{
+    display: none;
+}
+#header .logo{
+    display: flex;
+    align-items: center;
+}
+#header .logo img{
+    width: 30px;
+}
+#header .logo-text a{
+    font-size: 120%;
+    color:var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 7px;
+}
+#header .right-side{
+    display: flex;
+}
+#header .language{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+}
+#header .language::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: rgb(189, 189, 189);
+    left: -20px;
+    top: 0;
+    margin-right: 15px;
+}
+#header .language a{
+    font-size: 60%;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#header .language .en-language a{
+    margin-right: 10px;
+    position: relative;
+}
+#header .language .en-language a::after{
+    content: " ";
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    background: #333;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 5px;
+}
+#header .user{
+    display: none;
+}
+#header .user::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: rgb(189, 189, 189);
+    left: -20px;
+    top: 0;
+    margin-right: 15px;
+}
+#header .user .user-icon{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    padding: -15px;
+    background: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+}
+#header .user .user-icon a{
+    color:var(--main-color);
+    font-size: 60%;
+    color: #fff;  
+}
+#header .user .user-login a{
+    color: var(--text-color);
+    font-size: 60%;
+    font-weight: 700;
+}
+#header .cart a{
+    font-size: 105%;
+    color: var(--main-color);
+
+}
+#header .cart{
+    position: relative;
+    margin-left: 20px;
+}
+#header .cart::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 26px;
+    background: rgb(189, 189, 189);
+    left: -20px;
+    top: 0;
+    margin-right: 15px;
+}
+/* Login Section */
+#login{
+    padding: 0 50px;
+}
+#login .login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+}
+#login .login-container .login-box{
+    max-width: 400px;
+    background: #fff;
+    padding: 40px 20px;
+    box-shadow: 1px 1px 6px 2px rgba(0,0,0,0.1);
+}
+#login .login-container .login-box h2{
+    font-size: 120%;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+#login .login-container .login-box p{
+    font-size: 80%;
+    color: #000;
+    font-weight: 300;
+    
+    margin-bottom: 30px;
+}
+#login .login-container .fb-login {
+    max-width: 100%;
+    background: #1877f2;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+#login .login-container .fb-login i{
+    color: #fff;
+}
+#login .login-container .fb-login a {
+    color: #fff;
+    font-size: 70%;
+    font-weight: 700;
+    margin-left: 50px;
+    letter-spacing: 1px;
+}
+#login .login-container  span{
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    font-size: 70%;
+    color: #333;
+}
+#login .login-container .email-login {
+    max-width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--main-color);
+}
+
+#login .login-container .email-login a {
+    color: var(--main-color);
+    font-size: 70%;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#login .login-container .terms {
+    font-size: 50%;
+    margin-top: 15px;
+}
+#login .login-container .terms a{
+    color:var(--main-color);
+}
